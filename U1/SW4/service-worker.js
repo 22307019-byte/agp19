@@ -52,8 +52,8 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('message', (event) => {
     console.log('SW recibio:', event.data);
     if (event.data === 'mostrar-notificacion') {
-        self.registration.showNotification('Notificacion Local.', {
-            body: 'Esta es una prueba de notificacion push.',
+        self.registration.showNotification('Notificación.', {
+            body: 'Acceso permitido para recibir notificaciones.',
             icon: 'logo.png'
         });
     }
