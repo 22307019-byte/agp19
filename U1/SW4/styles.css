@@ -1,0 +1,133 @@
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente clásica, literaria */
+    background-color: #FAF9F6; /* Un color marfil o papel viejo muy sutil */
+    color: #333333; /* Color de texto principal (gris oscuro) */
+    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal para centrar el contenido */
+/* Usamos el 'body' pero le damos un ancho máximo */
+body {
+    max-width: 800px; /* Ancho máximo para que el texto no sea demasiado largo */
+    margin: 20px auto; /* Centra el bloque en la página */
+    padding: 25px 40px; /* Relleno interior */
+    border: 1px solid #DDD; /* Un borde sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Una sombra suave */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+}
+
+/* Estilos para los encabezados */
+h1, h2 {
+    color: #556B2F; /* Verde musgo oscuro, evocando naturaleza */
+    text-align: center;
+    border-bottom: 2px solid #EAEAEA; /* Una línea divisoria sutil */
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.4em; /* Título principal más grande */
+}
+
+h2 {
+    font-size: 1.8em; /* Subtítulo */
+    margin-top: 30px; /* Espacio antes de la nueva sección */
+}
+
+/* Estilos para los párrafos */
+p {
+    text-align: justify; /* Texto justificado para un aspecto de libro */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+/* Estilos para la navegación */
+nav {
+    margin-top: 40px; /* Espacio separando la navegación del texto */
+    text-align: center;
+    border-top: 1px solid #EAEAEA;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+nav li {
+    display: inline; /* Coloca los elementos de la lista en línea */
+    margin: 0 15px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    text-decoration: none; /* Quita el subrayado por defecto */
+    color: #556B2F; /* Mismo color verde que los títulos */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+nav a:hover {
+    text-decoration: underline; /* Subraya al pasar el ratón */
+    color: #3A4A20; /* Un verde un poco más oscuro */
+}
+
+/* Estilos para los botones */
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Misma fuente que el cuerpo */
+    font-size: 1em;
+    background-color: #556B2F; /* Color verde principal del tema */
+    color: #FFFFFF; /* Texto blanco */
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px 10px 0; /* Espaciado entre botones */
+    border-radius: 5px; /* Bordes redondeados (como el contenedor) */
+    cursor: pointer;
+    transition: background-color 0.2s; /* Efecto suave */
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+button:hover {
+    background-color: #3A4A20; /* Verde más oscuro (como los enlaces) */
+}
+
+/* Estilo para el enlace 'Regresar al Index' (que está fuera del <nav>) */
+/* Usamos 'body > a' para apuntar a enlaces que están directos en el body */
+body > a {
+    display: block; /* Lo convertimos en bloque para centrarlo y darle margen */
+    text-align: center;
+    margin-top: 30px; /* Le damos su propio espacio */
+    font-size: 1em;
+    color: #556B2F; /* Color verde del tema */
+    text-decoration: none; /* Quitamos el subrayado */
+}
+
+/* Efecto al pasar el ratón sobre el enlace 'Regresar' */
+body > a:hover {
+    color: #3A4A20;
+    text-decoration: underline; /* Mostramos subrayado al pasar el ratón */
+}
+/* Contenedor para centrar los botones */
+.contenedor-botones {
+    text-align: center; /* Centra los elementos 'inline-block' (como los botones) */
+}
+/* Estilos para una imagen con marco y profundidad */
+.imagen-con-marco {
+    display: block; /* Importante para que 'margin: auto' funcione y la imagen se centre */
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 25px auto; /* Centra la imagen horizontalmente y le da margen vertical */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    
+    /* Efecto de profundidad con múltiples sombras */
+    box-shadow: 
+        0 1px 2px rgba(0,0,0,0.07),  /* Sombra más cercana y ligera */
+        0 2px 4px rgba(0,0,0,0.07),  /* Sombra un poco más lejos */
+        0 4px 8px rgba(0,0,0,0.07),  /* Sombra media */
+        0 8px 16px rgba(0,0,0,0.07), /* Sombra más pronunciada para la "profundidad" */
+        0 16px 32px rgba(0,0,0,0.07); /* Sombra más grande y difusa */
+    
+    /* Pequeña transición para un efecto sutil al interactuar si se desea */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

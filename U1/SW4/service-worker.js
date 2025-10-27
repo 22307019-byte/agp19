@@ -7,10 +7,15 @@ const cacheAssets = [
     'index.html',
     'pagina1.html',
     'pagina2.html',
+    'pagina3.html',
     'offline.html',
     'styles.css',
     'main.js',
-    'logo.png'
+    'logo.png',
+    'imagen1.jpg',
+    'imagen2.JPG',
+    'imagen3.jpg',
+
 ];
 
 //Instalación del SW
